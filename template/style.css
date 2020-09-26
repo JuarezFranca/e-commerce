@@ -1,26 +1,52 @@
 html{
-    font-size: 70%;
+    font-size: 62.5%;
     box-sizing: border-box;
 }
 body{
-    font: 1.6rem helvetica;
-    height: 20vh;
+    font: 1.6rem Helvetica;
+    height: 100vh;
     margin: 0;
-    background-color: aqua;
+    
 }
 .grid-container{
     display: grid;
-    grid-template-areas:"header", "main", "footer";
+    grid-template-areas:"header" "main" "footer";
     grid-template-columns: 1fr;
     grid-template-rows: 5rem 1fr 5rem;
     height: 100%;
 }
 .header{
     grid-area: header;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
 }
+.brand a{
+    color: white;
+    font-size: 2.5rem;
+    font-size: bold;
+    text-decoration: none;
+   }
+.header-links a{
+    color: white;
+    text-decoration: none;
+}
+.header-links a:hover{
+    color: tomato;
+
+} 
 .main{
     grid-area: main;
+    background-color: tomato;
 }
 .footer{
     grid-area: footer;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
