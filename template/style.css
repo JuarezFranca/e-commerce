@@ -99,3 +99,35 @@ a:hover{
 .rating{
     margin-bottom: 1rem;
 }
+/* sidebar*/
+
+.brand button {
+    font-size: 3rem;
+    padding: .5rem;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+.sidebar{
+    position: fixed;
+    transform: translateX(-30rem);
+    width: 30rem;
+    background-color: white;
+    height: 100%;
+}
+.sidebar.open {
+    transform: translateX(0);
+}
+.sidebar-close-button {
+    border-radius:50%;
+    border: .1rem black solid;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0rem;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    right: 1.5rem;
+    top: 1rem;
+}
+ 

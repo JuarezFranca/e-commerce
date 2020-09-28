@@ -10,6 +10,9 @@
     <div class="grid-container">
         <header class="header">
             <div class="brand">
+                <button onclick="openMenu()">
+                    &#9776;
+                </button>
                 <a href="index.html">e-commerce</a>
             </div>
             <div class="header-links">
@@ -17,6 +20,18 @@
                 <a href="signin.html">Sign In</a>
             </div>
         </header>
+        <aside class="sidebar">
+            <h3>Shopping categories</h3>
+            <button class="sidebar-close-button" onclick="closeMenu()">x</button>
+            <ul>
+                <li>
+                    <a href="index.html">Canecas</a>
+                </li>
+                <li>
+                    <a href="index.html">Blusas</a>
+                </li>
+            </ul>
+        </aside>
         <main class="main">
             <div class="content">
                 <ul class="products">
@@ -32,30 +47,30 @@
                     </li>
                     <li>
                         <div class="product">
-                            <img class="products-image" src="images/caneca_nerd.jpg"  alt="product"/>
+                            <img class="products-image" src="images/caneca_nerd_attack.jpg"  alt="product"/>
                             <div class="product-name">
                                 <a href="product.html">Caneca</a></div>
-                            <div class="product-brand">The Masters</div>
+                            <div class="product-brand">Dinossauro</div>
                             <div class="price">R$25,00</div>
                             <div class="rating">4.7 Estrelas(30 reviews)</div>
                         </div>
                     </li>
                     <li>
                         <div class="product">
-                            <img class="products-image" src="images/caneca_nerd.jpg"  alt="product"/>
+                            <img class="products-image" src="images/caneca_nerd_saitama.jpg"  alt="product"/>
                             <div class="product-name">
                                 <a href="product.html">Caneca</a></div>
-                            <div class="product-brand">The Masters</div>
+                            <div class="product-brand">Saitama</div>
                             <div class="price">R$25,00</div>
                             <div class="rating">4.7 Estrelas(30 reviews)</div>
                         </div>
                     </li>
                     <li>
                         <div class="product">
-                            <img class="products-image" src="images/caneca_nerd.jpg"  alt="product"/>
+                            <img class="products-image" src="images/caneca_nerd_imnerd.jpg"  alt="product"/>
                             <div class="product-name">
                                 <a href="product.html">Caneca</a></div>
-                            <div class="product-brand">The Masters</div>
+                            <div class="product-brand">I'm Nerd</div>
                             <div class="price">R$25,00</div>
                             <div class="rating">4.7 Estrelas(30 reviews)</div>
                         </div>
@@ -68,6 +83,14 @@
             todos os direitos reservados
         </footer>
     </div>
+    <script>
+        function openMenu(){
+            document.querySelector(".sidebar").classList.add("open")
+        }
+        function closeMenu(){
+            document.querySelector(".sidebar").classList.remove("open")
+        }
+    </script>
 </body>
 
 </html>
